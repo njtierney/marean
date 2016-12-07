@@ -32,6 +32,7 @@ dir.create("analysis/02_fit")
 dir.create("analysis/03_process")
 dir.create("analysis/04_diagnostics")
 dir.create("analysis/05_paper")
+dir.create("analysis/06_supplementary")
 # step to create make or remake file
 dir.create("data")
 dir.create("R")
@@ -40,5 +41,8 @@ dir.create("R")
 To Do
 =====
 
--   Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.
--
+Create templates for: - writing / saving / reading data from each analysis step - makefile
+
+Create an example lightweight and heavyweight analysis examples.
+
+Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.

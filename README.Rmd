@@ -36,13 +36,24 @@ devtools::create(".") # select 1 to overwrite
 devtools::use_mit_license()
 devtools::use_readme_rmd()
 dir.create("analysis")
-file.create("analysis/Makefile")
 dir.create("analysis/00_explore")
 dir.create("analysis/01_tidy")
 dir.create("analysis/02_fit")
 dir.create("analysis/03_process")
 dir.create("analysis/04_diagnostics")
 dir.create("analysis/05_paper")
+dir.create("analysis/06_supplementary")
+file.create("analysis/Makefile")
+
+# create Rmd docs
+file.create("analysis/00_explore/00_explore.Rmd")
+file.create("analysis/01_tidy/01_tidy.Rmd")
+file.create("analysis/02_fit/02_fit.Rmd")
+file.create("analysis/03_process/03_process.Rmd")
+file.create("analysis/04_diagnostics/04_diagnostics.Rmd")
+file.create("analysis/05_paper/05_paper.Rmd")
+file.create("analysis/06_supplementary/06_supplementary.Rmd")
+
 # step to create make or remake file
 dir.create("data")
 dir.create("R")
@@ -50,6 +61,11 @@ dir.create("R")
 
 # To Do
 
-- Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.
-- 
+Create templates for:
+  - writing / saving / reading data from each analysis step
+  - makefile
+
+Create an example lightweight and heavyweight analysis examples.
+
+Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.
 
