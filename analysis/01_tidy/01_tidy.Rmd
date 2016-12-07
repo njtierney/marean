@@ -1,0 +1,67 @@
+---
+title: "tidy"
+author: "Nicholas Tierney"
+date: "`r format(Sys.time(), '%x at %H:%M:%S %Z')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(message = TRUE,
+                      warning = TRUE,
+                      error = TRUE,
+                      echo = FALSE,
+                      cache = TRUE)
+# rprojroot::find_rstudio_root_file()
+knitr::opts_knit$set(rprojroot::find_rstudio_root_file())
+```
+
+
+```{r load-libraries, include = FALSE}
+
+library(tidyverse)
+library(readxl)
+library(lubridate)
+library(feather)
+
+```
+
+```{r data-load}
+
+
+```
+
+```{r data-inspect}
+
+```
+
+
+```{r data-clean}
+
+
+```
+
+```{r data-transform}
+
+
+```
+
+```{r data-visualise}
+
+
+
+```
+
+
+```{r data-test}
+
+
+```
+
+
+```{r write-to-disk}
+
+
+
+```
+
