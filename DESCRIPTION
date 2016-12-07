@@ -1,0 +1,10 @@
+Package: marean
+Title: Aakes Reproducible Analysis
+Version: 0.0.0.9000
+Authors@R: person("Nicholas", "Tierney", email = "nicholas.tierney@gmail.com", role = c("aut", "cre"))
+Description: marean is a file structure (and potentially more) that facilitates 
+    reproducible analyses. One key feature of this is the use
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true

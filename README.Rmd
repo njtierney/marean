@@ -1,24 +1,35 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-marean
-======
+# marean
 
-marean (`ma`ke `re`produdicible `an`alysis) is a package that builds a framework to create a reproducible package. It is inspired by devtools, and [projectTemplate](http://projecttemplate.net/), the idea being to automate many of the steps that might get in the way of making an analysis reproducible, in this case, really focussing on creating filestructures so that you can focus on writing your paper. A key feature of marean is the use of a makefile to run analysis and storing the output. The idea being to save you time by not needing to re-run the analysis again.
+marean (`ma`ke `re`produdicible `an`alysis) is a package that builds a framework to create a reproducible package. It is inspired by devtools, and [projectTemplate](http://projecttemplate.net/), the idea being to automate many of the steps that might get in the way of making an analysis reproducible, in this case, really focussing on creating filestructures so that you can focus on writing your paper. A key feature of marean is the use of a makefile to run analysis and storing the output. The idea being to save you time by not needing to re-run the analysis again. 
 
 This structure was initially created when I wrote a Bayesian analysis that took 2-3 hours to run. I kep everything inside one giant rmarkdown document, which works great. Except when I occassionally fatfingered something and the analysis had to cook again.
 
 I created the makefile so I could perform the analysis once, and only once, and then focus on writing my paper.
 
-What does it do?
-================
+# What does it do?
 
 Currently, marean is only really suitable for forking, but I've listed the commands below to create this repository with the thought that this might turn into a package. However, I think that I need to write more papers that are fully reproducible before I can go ahead and do that.
 
 <!-- There's also a bunch of other really great papers and projects about this -->
-<!-- - rOpenSci links... -->
-commands used to create marean (so far)
 
-``` r
+<!-- - rOpenSci links... -->
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+commands used to create marean (so far)
+```{r eval = FALSE, echo = TRUE}
 
 # Create rproj first
 devtools::create(".") # select 1 to overwrite
@@ -37,8 +48,8 @@ dir.create("data")
 dir.create("R")
 ```
 
-To Do
-=====
+# To Do
 
--   Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.
--
+- Use / copy the templating system from devtools to create a bunch of templates for the rmarkdown files when using `use_vignette`, and Makefile.
+- 
+
