@@ -58,6 +58,17 @@ dir.create("data")
 dir.create("R")
 ```
 
+Perhaps these could be commands like:
+
+- `use_tidy`
+- `use_fit`
+- `use_process`
+- `use_paper`
+- `use_diagnostics`
+- `use_supplementary`
+
+also, perhaps `use_paper` could include some templates to a journal, or something?
+
 # To Do
 
 Create templates for:
